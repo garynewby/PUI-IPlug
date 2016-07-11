@@ -1,0 +1,32 @@
+
+//// common.xcconfig ////
+
+CERTIFICATE_ID           = GN
+GCC_VERSION              =
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+SDKROOT                  = macosx10.9
+MACOSX_DEPLOYMENT_TARGET = 10.7
+
+USER_HEADER_SEARCH_PATHS = $(SRCROOT)/../../WDL $(SRCROOT)/../../WDL/cairo/include  $(SRCROOT)/../../pui
+
+DEPLOYMENT_LOCATION      = YES
+DSTROOT     = $(VST_FOLDER)
+INSTALL_PATH = /
+SKIP_INSTALL = NO
+
+WDL_PATH   = $(SRCROOT)/../../WDL
+IPLUG_PATH = $(WDL_PATH)/IPlug
+VST3_SDK   = $(SRCROOT)/../../VST3_SDK
+PT9_SDK    = $(SRCROOT)/../../PT9_SDK
+MacBag     = $(SRCROOT)/../../PT9_SDK/MacBag
+AAX_SDK    = $(SRCROOT)/../../AAX_SDK
+CA_SDK     = $DEVELOPER_DIR/Extras/CoreAudio
+
+// Binary folder
+VST_FOLDER  = $(SRCROOT)/../../../Release
+VST3_FOLDER = $(SRCROOT)/../../../Release
+AU_FOLDER   = $(SRCROOT)/../../../Release
+RTAS_FOLDER = $(SRCROOT)/../../../Release
+AAX_FOLDER  = $(SRCROOT)/../../../Release
+APP_FOLDER  = $(SRCROOT)/../../../Release
+

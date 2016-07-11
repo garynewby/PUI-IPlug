@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\..\common.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <BINARY_NAME>puiTest</BINARY_NAME>
+    <APP_DEFS>SA_API;__WINDOWS_DS__;__WINDOWS_MM__;__WINDOWS_ASIO__;</APP_DEFS>
+    <VST_DEFS>VST_API;VST_FORCE_DEPRECATED;</VST_DEFS>
+    <VST3_DEFS>VST3_API</VST3_DEFS>
+    <VST3_LIBS>..\..\VST3_SDK\base\win\build-win\$(Platform)\$(Configuration)\base.lib;</VST3_LIBS>
+    <DEBUG_DEFS>_DEBUG;</DEBUG_DEFS>
+    <RELEASE_DEFS>NDEBUG;</RELEASE_DEFS>
+    <TRACER_DEFS>TRACER_BUILD;NDEBUG;</TRACER_DEFS>
+    <ADDITIONAL_INCLUDES>$(ProjectDir);</ADDITIONAL_INCLUDES>
+    <APP_INCLUDES>..\..\ASIO_SDK;..\..\WDL\rtaudiomidi;</APP_INCLUDES>
+    <APP_LIBS>dsound.lib;winmm.lib;</APP_LIBS>
+    <VST3_INCLUDES>..\..\VST3_SDK;</VST3_INCLUDES>
+    <AAX_INCLUDES>.\..\..\AAX_SDK\Interfaces;.\..\..\AAX_SDK\Interfaces\ACF;.\..\..\WDL\IPlug\AAX</AAX_INCLUDES>
+    <AAX_DEFS>AAX_API;_WINDOWS;WIN32;_WIN32;WINDOWS_VERSION;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE</AAX_DEFS>
+    <AAX_LIBS>..\..\AAX_SDK\Libs\Release\AAXLibrary.lib;</AAX_LIBS>
+    <AAXD_LIBS>..\..\AAX_SDK\Libs\Debug\AAXLibrary_D.lib;</AAXD_LIBS>
+    <AAX_64_LIBS>..\..\AAX_SDK\Libs\Release\AAXLibrary_x64.lib;</AAX_64_LIBS>
+    <AAX_64D_LIBS>..\..\AAX_SDK\Libs\Debug\AAXLibrary_x64_D.lib;</AAX_64D_LIBS>
+    <RTAS_INCLUDES>.\;..\;..\..\WDL\IPlug\RTAS;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\common;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\common\Platform;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\common\PI_LibInterface;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\common\Macros;..\..\PT9_SDK\AlturaPorts\AlturaSource\AppSupport;..\..\PT9_SDK\AlturaPorts\DFW\Utilities;..\..\PT9_SDK\AlturaPorts\NewFileLibs\Cmn;..\..\PT9_SDK\AlturaPorts\NewFileLibs\I18N;..\..\PT9_SDK\AlturaPorts\NewFileLibs\Doa;..\..\PT9_SDK\AlturaPorts\AlturaSource\PPC_H;..\..\PT9_SDK\AlturaPorts\DSIPublicInterface\PublicHeaders;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\PlugInLibrary\Automation;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\PlugInLibrary\ComponentWorld;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\PlugInLibrary\Controls;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\PlugInLibrary\CoreClasses;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\PlugInLibrary\DSPClasses;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\PlugInLibrary\ProcessClasses;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\PlugInLibrary\ProcessClasses\Interfaces;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\PlugInLibrary\Utilities;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\PlugInLibrary\ViewClasses;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\PlugInLibrary\Meters;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\PlugInLibrary\RTASP_Adapt;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\PlugInLibrary\EffectClasses;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\SupplementalPlugInLib\GraphicsExtensions;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\SupplementalPlugInLib\Encryption;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\SignalProcessing;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\DSPManager\Interfaces;..\..\PT9_SDK\AlturaPorts\DigiPublic\Interfaces;..\..\PT9_SDK\AlturaPorts\DigiPublic\SignalProcessingUtils;..\..\PT9_SDK\AlturaPorts\DigiPublic\Protection;..\..\PT9_SDK\AlturaPorts\DigiPublic\DigiTrace\Header;..\..\PT9_SDK\Utilities\DSPProbe\DSPProbeDLL.2;..\..\PT9_SDK\DAEWin\Include;..\..\PT9_SDK\AlturaPorts\DCM\Source;..\..\PT9_SDK\AlturaPorts\Fic\Interfaces\DAEClient;..\..\PT9_SDK\AlturaPorts\Fic\Interfaces\DigiInternal;..\..\PT9_SDK\AlturaPortsPT4_App\AppInterface;..\..\PT9_SDK\AlturaPorts\DirectIO\Headers;..\..\PT9_SDK\AlturaPorts\DirectIO\Source;..\..\PT9_SDK\AlturaPorts\StreamManager\Interfaces;..\..\PT9_SDK\AlturaPorts\StreamManager\Source;..\..\PT9_SDK\xplat\AVX\avx2\avx2sdk\inc;..\..\PT9_SDK\xplat\AVX\avx2\avx2sdk\utils;..\..\PT9_SDK\AlturaPorts\TDMPlugIns\SignalProcessing\Public</RTAS_INCLUDES>
+    <RTAS_DEFS>RTAS_API;_STDINT;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_WINDOWS;WIN32;_WIN32;WINDOWS_VERSION;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE</RTAS_DEFS>
+    <RTAS_LIBS>msimg32.lib;gdi32.lib;</RTAS_LIBS>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetName>$(BINARY_NAME)</TargetName>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ADDITIONAL_INCLUDES);..\..\WDL;..\..\WDL\lice;..\..\WDL\IPlug;..\..\..\MMLib;..\..\..\Libs\Cryptopp\source;..\..\..\Libs\Poco\Foundation\include;..\..\..\Libs\Poco\Net\include;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>IPlug.lib;lice.lib;cryptlib.lib;msimg32.lib;ws2_32.lib;wininet.lib;odbc32.lib;odbccp32.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comctl32.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="BINARY_NAME">
+      <Value>$(BINARY_NAME)</Value>
+    </BuildMacro>
+    <BuildMacro Include="APP_DEFS">
+      <Value>$(APP_DEFS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="VST_DEFS">
+      <Value>$(VST_DEFS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="VST3_DEFS">
+      <Value>$(VST3_DEFS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DEBUG_DEFS">
+      <Value>$(DEBUG_DEFS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="RELEASE_DEFS">
+      <Value>$(RELEASE_DEFS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TRACER_DEFS">
+      <Value>$(TRACER_DEFS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ADDITIONAL_INCLUDES">
+      <Value>$(ADDITIONAL_INCLUDES)</Value>
+    </BuildMacro>
+    <BuildMacro Include="APP_INCLUDES">
+      <Value>$(APP_INCLUDES)</Value>
+    </BuildMacro>
+    <BuildMacro Include="APP_LIBS">
+      <Value>$(APP_LIBS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="VST3_INCLUDES">
+      <Value>$(VST3_INCLUDES)</Value>
+    </BuildMacro>
+    <BuildMacro Include="VST3_LIBS">
+      <Value>$(VST3_LIBS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="AAX_INCLUDES">
+      <Value>$(AAX_INCLUDES)</Value>
+    </BuildMacro>
+    <BuildMacro Include="AAX_DEFS">
+      <Value>$(AAX_DEFS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="AAX_LIBS">
+      <Value>$(AAX_LIBS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="AAXD_LIBS">
+      <Value>$(AAXD_LIBS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="AAX_64_LIBS">
+      <Value>$(AAX_64_LIBS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="AAX_64D_LIBS">
+      <Value>$(AAX_64D_LIBS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="RTAS_INCLUDES">
+      <Value>$(RTAS_INCLUDES)</Value>
+    </BuildMacro>
+    <BuildMacro Include="RTAS_DEFS">
+      <Value>$(RTAS_DEFS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="RTAS_LIBS">
+      <Value>$(RTAS_LIBS)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

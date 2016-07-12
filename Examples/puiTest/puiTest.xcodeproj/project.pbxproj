@@ -12,10 +12,6 @@
 		4E16F3C91B5C5F8A00303B55 /* IPlugStructs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8EF13B63BA50032E0F3 /* IPlugStructs.cpp */; };
 		4E16F3CA1B5C5FB400303B55 /* IPlugVST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D9EC13B63C6A0032E0F3 /* IPlugVST.cpp */; };
 		4E16F3CC1B5C60A500303B55 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8FB13B63BA50032E0F3 /* Log.cpp */; };
-		4E16F3D31B5C701400303B55 /* cairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E16F3D21B5C701400303B55 /* cairo.a */; };
-		4E16F3D51B5C708400303B55 /* png.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E16F3D41B5C708400303B55 /* png.a */; };
-		4E16F3D71B5C708900303B55 /* pixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E16F3D61B5C708900303B55 /* pixman-1.a */; };
-		4E16F3DA1B5C70BA00303B55 /* freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E16F3D91B5C70BA00303B55 /* freetype.a */; };
 		4E16F3DC1B5C70E600303B55 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E16F3DB1B5C70E600303B55 /* libz.dylib */; };
 		4E1AC76915CDEACB00DA3883 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E41CB90D14C2A900A0943B /* CoreAudio.framework */; };
 		4E1AC76A15CDEADB00DA3883 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E41D920D14C2D600A0943B /* AudioToolbox.framework */; };
@@ -25,28 +21,44 @@
 		4E30B8B715C4AA0B000B7FDA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E30B8B415C4A9EA000B7FDA /* Accelerate.framework */; };
 		4E30B8B815C4AA16000B7FDA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E30B8B415C4A9EA000B7FDA /* Accelerate.framework */; };
 		4E30B8B915C4AA1E000B7FDA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E30B8B415C4A9EA000B7FDA /* Accelerate.framework */; };
+		4E6AE1AB1D35360A00CAD48D /* cairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1A81D35360A00CAD48D /* cairo.a */; };
+		4E6AE1AC1D35360A00CAD48D /* cairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1A81D35360A00CAD48D /* cairo.a */; };
+		4E6AE1AD1D35360A00CAD48D /* cairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1A81D35360A00CAD48D /* cairo.a */; };
+		4E6AE1AE1D35360A00CAD48D /* cairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1A81D35360A00CAD48D /* cairo.a */; };
+		4E6AE1AF1D35360A00CAD48D /* cairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1A81D35360A00CAD48D /* cairo.a */; };
+		4E6AE1B01D35360A00CAD48D /* pixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1A91D35360A00CAD48D /* pixman-1.a */; };
+		4E6AE1B11D35360A00CAD48D /* pixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1A91D35360A00CAD48D /* pixman-1.a */; };
+		4E6AE1B21D35360A00CAD48D /* pixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1A91D35360A00CAD48D /* pixman-1.a */; };
+		4E6AE1B31D35360A00CAD48D /* pixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1A91D35360A00CAD48D /* pixman-1.a */; };
+		4E6AE1B41D35360A00CAD48D /* pixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1A91D35360A00CAD48D /* pixman-1.a */; };
+		4E6AE1B51D35360A00CAD48D /* png.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1AA1D35360A00CAD48D /* png.a */; };
+		4E6AE1B61D35360A00CAD48D /* png.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1AA1D35360A00CAD48D /* png.a */; };
+		4E6AE1B71D35360A00CAD48D /* png.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1AA1D35360A00CAD48D /* png.a */; };
+		4E6AE1B81D35360A00CAD48D /* png.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1AA1D35360A00CAD48D /* png.a */; };
+		4E6AE1B91D35360A00CAD48D /* png.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1AA1D35360A00CAD48D /* png.a */; };
+		4E6AE1BB1D35361700CAD48D /* freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1BA1D35361700CAD48D /* freetype.a */; };
+		4E6AE1BC1D35361700CAD48D /* freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1BA1D35361700CAD48D /* freetype.a */; };
+		4E6AE1BD1D35361700CAD48D /* freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1BA1D35361700CAD48D /* freetype.a */; };
+		4E6AE1BE1D35361700CAD48D /* freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1BA1D35361700CAD48D /* freetype.a */; };
+		4E6AE1BF1D35361700CAD48D /* freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6AE1BA1D35361700CAD48D /* freetype.a */; };
 		4E6C847A15F628EE00E9E6D7 /* libPluginLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6C847915F628EE00E9E6D7 /* libPluginLibrary.a */; };
 		4E7D1F8215CDE2DF007C0B33 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E41CC40D14C2B000A0943B /* CoreServices.framework */; };
-		4E8A009A1D3420C000F1BCFB /* pui_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A00931D3420C000F1BCFB /* pui_osx.mm */; };
-		4E8A009B1D3420C000F1BCFB /* pui_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A00931D3420C000F1BCFB /* pui_osx.mm */; };
-		4E8A009C1D3420C000F1BCFB /* pui_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A00931D3420C000F1BCFB /* pui_osx.mm */; };
-		4E8A009D1D3420C000F1BCFB /* pui_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A00931D3420C000F1BCFB /* pui_osx.mm */; };
-		4E8A009E1D3420C000F1BCFB /* pui_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A00931D3420C000F1BCFB /* pui_osx.mm */; };
-		4E8A00A41D3420C000F1BCFB /* puiCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E8A00951D3420C000F1BCFB /* puiCommon.h */; };
-		4E8A00A51D3420C000F1BCFB /* puiControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E8A00961D3420C000F1BCFB /* puiControl.h */; };
-		4E8A00A61D3420C000F1BCFB /* puiKnobMultiControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E8A00971D3420C000F1BCFB /* puiKnobMultiControl.h */; };
-		4E8A00A71D3420C000F1BCFB /* puiToggleButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E8A00981D3420C000F1BCFB /* puiToggleButton.h */; };
-		4E8A00A81D3420C000F1BCFB /* puiUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E8A00991D3420C000F1BCFB /* puiUI.h */; };
 		4E8A00AA1D34236E00F1BCFB /* puiTest.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A00A91D34236E00F1BCFB /* puiTest.xcconfig */; };
 		4E8A00CB1D34525500F1BCFB /* knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A00CA1D34525500F1BCFB /* knob.png */; };
 		4E8A00CC1D34525500F1BCFB /* knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A00CA1D34525500F1BCFB /* knob.png */; };
 		4E8A00CD1D34525500F1BCFB /* knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A00CA1D34525500F1BCFB /* knob.png */; };
 		4E8A00CE1D34525500F1BCFB /* knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A00CA1D34525500F1BCFB /* knob.png */; };
 		4E8A00CF1D34525500F1BCFB /* knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A00CA1D34525500F1BCFB /* knob.png */; };
-		4EC210721C34ACCF00AC0CB0 /* cairo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E16F3D21B5C701400303B55 /* cairo.a */; };
-		4EC210731C34ACD200AC0CB0 /* png.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E16F3D41B5C708400303B55 /* png.a */; };
-		4EC210741C34ACD600AC0CB0 /* pixman-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E16F3D61B5C708900303B55 /* pixman-1.a */; };
-		4EC210751C34ACD800AC0CB0 /* freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E16F3D91B5C70BA00303B55 /* freetype.a */; };
+		4EA710661D35351000B04085 /* pui_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7105F1D35351000B04085 /* pui_osx.mm */; };
+		4EA710671D35351000B04085 /* pui_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7105F1D35351000B04085 /* pui_osx.mm */; };
+		4EA710681D35351000B04085 /* pui_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7105F1D35351000B04085 /* pui_osx.mm */; };
+		4EA710691D35351000B04085 /* pui_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7105F1D35351000B04085 /* pui_osx.mm */; };
+		4EA7106A1D35351000B04085 /* pui_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7105F1D35351000B04085 /* pui_osx.mm */; };
+		4EA710701D35351000B04085 /* puiCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA710611D35351000B04085 /* puiCommon.h */; };
+		4EA710711D35351000B04085 /* puiControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA710621D35351000B04085 /* puiControl.h */; };
+		4EA710721D35351000B04085 /* puiKnobMultiControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA710631D35351000B04085 /* puiKnobMultiControl.h */; };
+		4EA710731D35351000B04085 /* puiToggleButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA710641D35351000B04085 /* puiToggleButton.h */; };
+		4EA710741D35351000B04085 /* puiUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA710651D35351000B04085 /* puiUI.h */; };
 		4EC210761C34ACDC00AC0CB0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E16F3DB1B5C70E600303B55 /* libz.dylib */; };
 		4ECC6DC81680AFED00AA8A64 /* puiTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC6DC61680AFC500AA8A64 /* puiTest.cpp */; };
 		4ECF890C18948C8C00638BCE /* resource.h in Headers */ = {isa = PBXBuildFile; fileRef = 52FBBED30D0CF143001C8B8A /* resource.h */; };
@@ -216,24 +228,24 @@
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		4E16F3D21B5C701400303B55 /* cairo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = cairo.a; path = ../../WDL/cairo/lib/osx/cairo.a; sourceTree = "<group>"; };
-		4E16F3D41B5C708400303B55 /* png.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = png.a; path = ../../WDL/cairo/lib/osx/png.a; sourceTree = "<group>"; };
-		4E16F3D61B5C708900303B55 /* pixman-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "pixman-1.a"; path = "../../WDL/cairo/lib/osx/pixman-1.a"; sourceTree = "<group>"; };
-		4E16F3D91B5C70BA00303B55 /* freetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freetype.a; path = ../../WDL/freetype/lib/osx/freetype.a; sourceTree = "<group>"; };
 		4E16F3DB1B5C70E600303B55 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4E30B8B415C4A9EA000B7FDA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		4E5AEE7A17B67E5000D671F1 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
 		4E5AEE7C17B67E5000D671F1 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = MainMenu.xib; sourceTree = "<group>"; };
+		4E6AE1A81D35360A00CAD48D /* cairo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = cairo.a; path = ../../Libs/cairo/lib/osx/cairo.a; sourceTree = "<group>"; };
+		4E6AE1A91D35360A00CAD48D /* pixman-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "pixman-1.a"; path = "../../Libs/cairo/lib/osx/pixman-1.a"; sourceTree = "<group>"; };
+		4E6AE1AA1D35360A00CAD48D /* png.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = png.a; path = ../../Libs/cairo/lib/osx/png.a; sourceTree = "<group>"; };
+		4E6AE1BA1D35361700CAD48D /* freetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freetype.a; path = ../../Libs/freetype/lib/osx/freetype.a; sourceTree = "<group>"; };
 		4E6C847915F628EE00E9E6D7 /* libPluginLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPluginLibrary.a; path = ../../PT9_SDK/MacBag/Libs/Release/libPluginLibrary.a; sourceTree = "<group>"; };
-		4E8A00931D3420C000F1BCFB /* pui_osx.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = pui_osx.mm; sourceTree = "<group>"; };
-		4E8A00941D3420C000F1BCFB /* pui_win.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pui_win.cpp; sourceTree = "<group>"; };
-		4E8A00951D3420C000F1BCFB /* puiCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puiCommon.h; sourceTree = "<group>"; };
-		4E8A00961D3420C000F1BCFB /* puiControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puiControl.h; sourceTree = "<group>"; };
-		4E8A00971D3420C000F1BCFB /* puiKnobMultiControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puiKnobMultiControl.h; sourceTree = "<group>"; };
-		4E8A00981D3420C000F1BCFB /* puiToggleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puiToggleButton.h; sourceTree = "<group>"; };
-		4E8A00991D3420C000F1BCFB /* puiUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puiUI.h; sourceTree = "<group>"; };
 		4E8A00A91D34236E00F1BCFB /* puiTest.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = puiTest.xcconfig; sourceTree = "<group>"; };
 		4E8A00CA1D34525500F1BCFB /* knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = knob.png; path = resources/img/knob.png; sourceTree = "<group>"; };
+		4EA7105F1D35351000B04085 /* pui_osx.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = pui_osx.mm; sourceTree = "<group>"; };
+		4EA710601D35351000B04085 /* pui_win.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pui_win.cpp; sourceTree = "<group>"; };
+		4EA710611D35351000B04085 /* puiCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puiCommon.h; sourceTree = "<group>"; };
+		4EA710621D35351000B04085 /* puiControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puiControl.h; sourceTree = "<group>"; };
+		4EA710631D35351000B04085 /* puiKnobMultiControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puiKnobMultiControl.h; sourceTree = "<group>"; };
+		4EA710641D35351000B04085 /* puiToggleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puiToggleButton.h; sourceTree = "<group>"; };
+		4EA710651D35351000B04085 /* puiUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puiUI.h; sourceTree = "<group>"; };
 		4EB56A3318338F8100E3052A /* puiTest.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = puiTest.icns; path = resources/puiTest.icns; sourceTree = "<group>"; };
 		4EB77F5719EDDA3B00339150 /* common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = common.xcconfig; path = ../../common.xcconfig; sourceTree = "<group>"; };
 		4EC210701C349CDE00AC0CB0 /* puiTest_UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = puiTest_UI.h; sourceTree = SOURCE_ROOT; };
@@ -398,15 +410,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E16F3DC1B5C70E600303B55 /* libz.dylib in Frameworks */,
-				4E16F3D31B5C701400303B55 /* cairo.a in Frameworks */,
-				4E16F3DA1B5C70BA00303B55 /* freetype.a in Frameworks */,
-				4E16F3D51B5C708400303B55 /* png.a in Frameworks */,
-				4E16F3D71B5C708900303B55 /* pixman-1.a in Frameworks */,
+				4E6AE1AB1D35360A00CAD48D /* cairo.a in Frameworks */,
+				4E6AE1B01D35360A00CAD48D /* pixman-1.a in Frameworks */,
 				4E30B8B515C4A9EA000B7FDA /* Accelerate.framework in Frameworks */,
 				4F20EF2E132C69FE0030E34C /* Carbon.framework in Frameworks */,
+				4E6AE1B51D35360A00CAD48D /* png.a in Frameworks */,
 				4F20EF2D132C69FE0030E34C /* Cocoa.framework in Frameworks */,
 				4E1AC76A15CDEADB00DA3883 /* AudioToolbox.framework in Frameworks */,
 				4E1AC76B15CDEB2600DA3883 /* AudioUnit.framework in Frameworks */,
+				4E6AE1BB1D35361700CAD48D /* freetype.a in Frameworks */,
 				4E7D1F8215CDE2DF007C0B33 /* CoreServices.framework in Frameworks */,
 				4E1AC76915CDEACB00DA3883 /* CoreAudio.framework in Frameworks */,
 			);
@@ -418,11 +430,15 @@
 			files = (
 				4E30B8B715C4AA0B000B7FDA /* Accelerate.framework in Frameworks */,
 				4F3AE1D412C0E5E2001FD7A4 /* Carbon.framework in Frameworks */,
+				4E6AE1BD1D35361700CAD48D /* freetype.a in Frameworks */,
 				4F3AE1D512C0E5E2001FD7A4 /* Cocoa.framework in Frameworks */,
 				4F3AE1D612C0E5E2001FD7A4 /* AudioToolbox.framework in Frameworks */,
+				4E6AE1AD1D35360A00CAD48D /* cairo.a in Frameworks */,
+				4E6AE1B21D35360A00CAD48D /* pixman-1.a in Frameworks */,
 				4F3AE1D712C0E5E2001FD7A4 /* AudioUnit.framework in Frameworks */,
 				4F3AE1D812C0E5E2001FD7A4 /* CoreServices.framework in Frameworks */,
 				4F3AE1D912C0E5E2001FD7A4 /* CoreAudio.framework in Frameworks */,
+				4E6AE1B71D35360A00CAD48D /* png.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,10 +446,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6AE1AE1D35360A00CAD48D /* cairo.a in Frameworks */,
+				4E6AE1B81D35360A00CAD48D /* png.a in Frameworks */,
 				4E30B8B815C4AA16000B7FDA /* Accelerate.framework in Frameworks */,
 				4F7F5C6213E95EC8002918FD /* Cocoa.framework in Frameworks */,
 				4F7F5C6313E95EC8002918FD /* Carbon.framework in Frameworks */,
+				4E6AE1B31D35360A00CAD48D /* pixman-1.a in Frameworks */,
 				4F7F5CF713E96564002918FD /* System.framework in Frameworks */,
+				4E6AE1BE1D35361700CAD48D /* freetype.a in Frameworks */,
 				4E6C847A15F628EE00E9E6D7 /* libPluginLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,8 +462,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6AE1AC1D35360A00CAD48D /* cairo.a in Frameworks */,
 				4E30B8B615C4A9F0000B7FDA /* Accelerate.framework in Frameworks */,
+				4E6AE1B11D35360A00CAD48D /* pixman-1.a in Frameworks */,
 				4F9828DA140A9EB700F3FCC1 /* Cocoa.framework in Frameworks */,
+				4E6AE1B61D35360A00CAD48D /* png.a in Frameworks */,
+				4E6AE1BC1D35361700CAD48D /* freetype.a in Frameworks */,
 				4F9828DB140A9EB700F3FCC1 /* Carbon.framework in Frameworks */,
 				4F9828D8140A9EB700F3FCC1 /* libbase.a in Frameworks */,
 			);
@@ -453,15 +477,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6AE1AF1D35360A00CAD48D /* cairo.a in Frameworks */,
 				4EC210761C34ACDC00AC0CB0 /* libz.dylib in Frameworks */,
-				4EC210721C34ACCF00AC0CB0 /* cairo.a in Frameworks */,
-				4EC210731C34ACD200AC0CB0 /* png.a in Frameworks */,
-				4EC210741C34ACD600AC0CB0 /* pixman-1.a in Frameworks */,
-				4EC210751C34ACD800AC0CB0 /* freetype.a in Frameworks */,
 				4F3B0B44158B50A5001B0CEF /* libAAXLibrary.a in Frameworks */,
 				4E30B8B915C4AA1E000B7FDA /* Accelerate.framework in Frameworks */,
 				4FB6002C1567CB0A0020189A /* Cocoa.framework in Frameworks */,
+				4E6AE1B91D35360A00CAD48D /* png.a in Frameworks */,
 				4FB6002D1567CB0A0020189A /* Carbon.framework in Frameworks */,
+				4E6AE1B41D35360A00CAD48D /* pixman-1.a in Frameworks */,
+				4E6AE1BF1D35361700CAD48D /* freetype.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +496,7 @@
 			isa = PBXGroup;
 			children = (
 				4E30B8A615C4A3BE000B7FDA /* Effect */,
-				4E8A00921D3420C000F1BCFB /* Pui */,
+				4EA7105E1D35351000B04085 /* PUI */,
 				32C88E010371C26100C91783 /* Config */,
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
@@ -542,10 +566,10 @@
 		4E16F3D81B5C708D00303B55 /* New */ = {
 			isa = PBXGroup;
 			children = (
-				4E16F3D21B5C701400303B55 /* cairo.a */,
-				4E16F3D41B5C708400303B55 /* png.a */,
-				4E16F3D61B5C708900303B55 /* pixman-1.a */,
-				4E16F3D91B5C70BA00303B55 /* freetype.a */,
+				4E6AE1A81D35360A00CAD48D /* cairo.a */,
+				4E6AE1A91D35360A00CAD48D /* pixman-1.a */,
+				4E6AE1AA1D35360A00CAD48D /* png.a */,
+				4E6AE1BA1D35361700CAD48D /* freetype.a */,
 			);
 			name = New;
 			sourceTree = "<group>";
@@ -573,19 +597,19 @@
 			path = resources/English.lproj;
 			sourceTree = "<group>";
 		};
-		4E8A00921D3420C000F1BCFB /* Pui */ = {
+		4EA7105E1D35351000B04085 /* PUI */ = {
 			isa = PBXGroup;
 			children = (
-				4E8A00991D3420C000F1BCFB /* puiUI.h */,
-				4E8A00951D3420C000F1BCFB /* puiCommon.h */,
-				4E8A00931D3420C000F1BCFB /* pui_osx.mm */,
-				4E8A00941D3420C000F1BCFB /* pui_win.cpp */,
-				4E8A00961D3420C000F1BCFB /* puiControl.h */,
-				4E8A00971D3420C000F1BCFB /* puiKnobMultiControl.h */,
-				4E8A00981D3420C000F1BCFB /* puiToggleButton.h */,
+				4EA7105F1D35351000B04085 /* pui_osx.mm */,
+				4EA710601D35351000B04085 /* pui_win.cpp */,
+				4EA710611D35351000B04085 /* puiCommon.h */,
+				4EA710621D35351000B04085 /* puiControl.h */,
+				4EA710631D35351000B04085 /* puiKnobMultiControl.h */,
+				4EA710641D35351000B04085 /* puiToggleButton.h */,
+				4EA710651D35351000B04085 /* puiUI.h */,
 			);
-			name = Pui;
-			path = ../../WDL/Pui;
+			name = PUI;
+			path = ../../PUI;
 			sourceTree = "<group>";
 		};
 		4F05224015656DAD00AE0D2E /* AAX Plugin */ = {
@@ -1019,7 +1043,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E8A00A41D3420C000F1BCFB /* puiCommon.h in Headers */,
+				4EA710701D35351000B04085 /* puiCommon.h in Headers */,
 				4FF016F8134E14E2001447BA /* ptrlist.h in Headers */,
 				4FF016F9134E14E2001447BA /* wdlstring.h in Headers */,
 				4F78D8D913B63B5D0032E0F3 /* aeffect.h in Headers */,
@@ -1028,21 +1052,21 @@
 				4F1F1BEA135B1F60003A5BB2 /* wdlendian.h in Headers */,
 				4F78D94013B63BA50032E0F3 /* IPlug_include_in_plug_src.h in Headers */,
 				4ECF890C18948C8C00638BCE /* resource.h in Headers */,
-				4E8A00A81D3420C000F1BCFB /* puiUI.h in Headers */,
+				4EA710741D35351000B04085 /* puiUI.h in Headers */,
 				4F78D94413B63BA50032E0F3 /* IPlugBase.h in Headers */,
 				4F78D94913B63BA50032E0F3 /* Containers.h in Headers */,
 				4F78D94A13B63BA50032E0F3 /* Hosts.h in Headers */,
 				4F78D95213B63BA50032E0F3 /* Log.h in Headers */,
 				4F78D95613B63BA50032E0F3 /* IPlugStructs.h in Headers */,
 				4F78D95B13B63BA50032E0F3 /* IParam.h in Headers */,
-				4E8A00A61D3420C000F1BCFB /* puiKnobMultiControl.h in Headers */,
-				4E8A00A51D3420C000F1BCFB /* puiControl.h in Headers */,
+				4EA710721D35351000B04085 /* puiKnobMultiControl.h in Headers */,
+				4EA710711D35351000B04085 /* puiControl.h in Headers */,
 				4F78D95D13B63BA50032E0F3 /* IMidiQueue.h in Headers */,
 				4F78DA0713B63CD90032E0F3 /* IPlugAU.h in Headers */,
 				4F3EE94913B65A350097B791 /* IPlugOSDetect.h in Headers */,
 				4FA88B931444E4C4006CB8DA /* dfx-au-utilities.h in Headers */,
 				4EF6DA7B1680B2C10040867D /* IPlug_include_in_plug_hdr.h in Headers */,
-				4E8A00A71D3420C000F1BCFB /* puiToggleButton.h in Headers */,
+				4EA710731D35351000B04085 /* puiToggleButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1322,7 +1346,7 @@
 				4E16F3CA1B5C5FB400303B55 /* IPlugVST.cpp in Sources */,
 				4E16F3CC1B5C60A500303B55 /* Log.cpp in Sources */,
 				4E16F3C81B5C5F8600303B55 /* Hosts.cpp in Sources */,
-				4E8A009A1D3420C000F1BCFB /* pui_osx.mm in Sources */,
+				4EA710661D35351000B04085 /* pui_osx.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1333,7 +1357,7 @@
 				4F78D94513B63BA50032E0F3 /* IPlugBase.cpp in Sources */,
 				4F78D94713B63BA50032E0F3 /* IPlugStructs.cpp in Sources */,
 				4F78D94B13B63BA50032E0F3 /* Hosts.cpp in Sources */,
-				4E8A009C1D3420C000F1BCFB /* pui_osx.mm in Sources */,
+				4EA710681D35351000B04085 /* pui_osx.mm in Sources */,
 				4F78D95313B63BA50032E0F3 /* Log.cpp in Sources */,
 				4F78D95C13B63BA50032E0F3 /* IParam.cpp in Sources */,
 				4F78DA0813B63CD90032E0F3 /* IPlugAU.cpp in Sources */,
@@ -1350,7 +1374,7 @@
 			files = (
 				4F7F5C5113E95EC8002918FD /* IPlugBase.cpp in Sources */,
 				4F7F5C5213E95EC8002918FD /* IPlugStructs.cpp in Sources */,
-				4E8A009D1D3420C000F1BCFB /* pui_osx.mm in Sources */,
+				4EA710691D35351000B04085 /* pui_osx.mm in Sources */,
 				4F7F5C5313E95EC8002918FD /* Hosts.cpp in Sources */,
 				4F7F5C5813E95EC8002918FD /* Log.cpp in Sources */,
 				4F7F5C5A13E95EC8002918FD /* IParam.cpp in Sources */,
@@ -1375,7 +1399,7 @@
 				4F9828B8140A9EB700F3FCC1 /* IPlugBase.cpp in Sources */,
 				4F9828B9140A9EB700F3FCC1 /* IPlugStructs.cpp in Sources */,
 				4F9828BA140A9EB700F3FCC1 /* Hosts.cpp in Sources */,
-				4E8A009B1D3420C000F1BCFB /* pui_osx.mm in Sources */,
+				4EA710671D35351000B04085 /* pui_osx.mm in Sources */,
 				4F9828BF140A9EB700F3FCC1 /* Log.cpp in Sources */,
 				4F9828C1140A9EB700F3FCC1 /* IParam.cpp in Sources */,
 				4F9828C4140A9EB700F3FCC1 /* IPlugVST3.cpp in Sources */,
@@ -1410,7 +1434,7 @@
 				4FB6001C1567CB0A0020189A /* Hosts.cpp in Sources */,
 				4FB600211567CB0A0020189A /* Log.cpp in Sources */,
 				4FB600231567CB0A0020189A /* IParam.cpp in Sources */,
-				4E8A009E1D3420C000F1BCFB /* pui_osx.mm in Sources */,
+				4EA7106A1D35351000B04085 /* pui_osx.mm in Sources */,
 				4FB600261567CB0A0020189A /* AAX_Exports.cpp in Sources */,
 				4FB600271567CB0A0020189A /* IPlugAAX.cpp in Sources */,
 				4FB600281567CB0A0020189A /* IPlugAAX_Describe.cpp in Sources */,
@@ -1563,7 +1587,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.puitest.vst.${BINARY_NAME}";
 				PRODUCT_NAME = "$(BINARY_NAME)";
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../WDL $(SRCROOT)/../../WDL/cairo/include $(SRCROOT)/../../pugl";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../WDL $(SRCROOT)/../../Libs/cairo/include $(SRCROOT)/../../pugl";
 				WRAPPER_EXTENSION = vst;
 				ZERO_LINK = NO;
 			};
@@ -1604,7 +1628,7 @@
 				PRODUCT_NAME = "$(BINARY_NAME)";
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = YES;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../WDL $(SRCROOT)/../../WDL/cairo/include $(SRCROOT)/../../pugl";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../WDL $(SRCROOT)/../../Libs/cairo/include $(SRCROOT)/../../pugl";
 				WRAPPER_EXTENSION = vst;
 				ZERO_LINK = NO;
 			};

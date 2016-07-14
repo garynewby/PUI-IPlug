@@ -13,22 +13,25 @@
 #include "pui.hpp"
 
 #ifndef WM_MOUSEWHEEL
-#    define WM_MOUSEWHEEL 0x020A
+    #define WM_MOUSEWHEEL 0x020A
 #endif
+
 #ifndef WM_MOUSEHWHEEL
-#    define WM_MOUSEHWHEEL 0x020E
+    #define WM_MOUSEHWHEEL 0x020E
 #endif
+
 #ifndef WHEEL_DELTA
-#    define WHEEL_DELTA 120
+    #define WHEEL_DELTA 120
 #endif
+
 #ifdef _WIN64
-#    ifndef GWLP_USERDATA
-#        define GWLP_USERDATA (-21)
-#    endif
+    #ifndef GWLP_USERDATA
+        #define GWLP_USERDATA (-21)
+    #endif
 #else
-#    ifndef GWL_USERDATA
-#        define GWL_USERDATA (-21)
-#    endif
+    #ifndef GWL_USERDATA
+        #define GWL_USERDATA (-21)
+    #endif
 #endif
 
 #define PUI_LOCAL_CLOSE_MSG (WM_USER + 50)

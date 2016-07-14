@@ -16,16 +16,14 @@ class puiTestUI : public PuiUI  {
 public:
     
     puiTestUI(void *window, int gWidth, int gHeight, bool resizable, bool ignoreKeyRepeat) : PuiUI(window, gWidth, gHeight, resizable, ignoreKeyRepeat) {
-        
-        setContextType(PUI_CAIRO);
-        
+                
         controls.push_back(new PuiKnobMultiControl(this, 50, 200, 60, pathForImageWithName("knob.png").c_str()));
         controls.push_back(new PuiKnobMultiControl(this, 150, 200, 60, pathForImageWithName("knob.png").c_str()));
-        controls.push_back(new PuiKnobMultiControl(this, 300, 200, 60, pathForImageWithName("knob.png").c_str()));
+        controls.push_back(new PuiKnobMultiControl(this, 250, 200, 60, pathForImageWithName("knob.png").c_str()));
 
-        controls.push_back(new PuiToggleButton(this, 20,  50, 100, 44, "Attack"));
-        controls.push_back(new PuiToggleButton(this, 180, 50, 100, 44, "Release"));
-        controls.push_back(new PuiToggleButton(this, 320, 50, 100, 44, "Bypass"));
+        controls.push_back(new PuiToggleButton(this, 50,  50, 100, 44, "Attack"));
+        controls.push_back(new PuiToggleButton(this, 200, 50, 100, 44, "Release"));
+        controls.push_back(new PuiToggleButton(this, 350, 50, 100, 44, "Bypass"));
         
         forceRedraw();
     }

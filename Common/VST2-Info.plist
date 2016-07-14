@@ -7,9 +7,9 @@
 	<key>CFBundleExecutable</key>
 	<string>${BINARY_NAME}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>${PRODUCT_VERSION}, © 2016</string>
+	<string>${PRODUCT_VERSION}, © 2016 </string>
 	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<string>com.pui.vst.${BINARY_NAME}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -19,10 +19,10 @@
 	<key>CFBundleShortVersionString</key>
 	<string>${PRODUCT_VERSION}</string>
 	<key>CFBundleSignature</key>
-	<string>MLMU</string>
+	<string>PUIP</string>
 	<key>CFBundleVersion</key>
 	<string>${PRODUCT_VERSION}</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.6.0</string>
+	<string>10.7.0</string>
 </dict>
 </plist>

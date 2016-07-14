@@ -1,9 +1,9 @@
-#define PLUG_MFR "Puitest"
+#define PLUG_MFR "Pui"
 #define PLUG_NAME "puiTest"
 
 #define PLUG_CLASS_NAME puiTest
 
-#define BUNDLE_MFR "puitest"
+#define BUNDLE_MFR "pui"
 #define BUNDLE_NAME "puiTest"
 
 #define PLUG_ENTRY puiTest_Entry
@@ -15,11 +15,11 @@
 #define VIEW_CLASS puiTest_View
 #define VIEW_CLASS_STR "puiTest_View"
 
-#define PLUG_VER 0x00010300
+#define PLUG_VER 0x00010000
 #define VST3_VER_STR "1.0.0"
 
-#define PLUG_UNIQUE_ID 'Eq3v'
-#define PLUG_MFR_ID 'Mlmu'
+#define PLUG_UNIQUE_ID 'PuTe'
+#define PLUG_MFR_ID 'Puip'
 
 // PROTOOLS
 #if (defined(AAX_API) || defined(RTAS_API)) && !defined(_PIDS_)
@@ -28,7 +28,7 @@
   const int PLUG_TYPE_IDS_AS[2] = {'CCA1', 'CCA2'};
 #endif
 
-#define PLUG_MFR_PT  "Puitest"
+#define PLUG_MFR_PT  "Pui"
 #define PLUG_NAME_PT "puiTest"
 #define PLUG_TYPE_PT "EQ"
 
@@ -55,12 +55,12 @@
 #define BACK_IMG  "resources/img/bmp00128.png"
 
 #if defined(SA_API) && !defined(OS_IOS)
-#include "app_wrapper/app_resource.h"
+    #include "app_wrapper/app_resource.h"
 #endif
 
 // VST3
-#define MFR_URL "www.puitest.com"
-#define MFR_EMAIL "mmsupport@puitest.com"
+#define MFR_URL "www.your_domain.com"
+#define MFR_EMAIL "support@your_domain.com"
 #define EFFECT_TYPE_VST3 "Fx|EQ"
 
 

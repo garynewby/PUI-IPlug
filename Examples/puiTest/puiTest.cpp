@@ -27,17 +27,23 @@ puiTest::puiTest(IPlugInstanceInfo instanceInfo) : IPLUG_CTOR(kNumParams, kNumPr
         kOut,       0.5,
         kBypass,    false
     );
-    
 }
 
 puiTest::~puiTest() {
 	delete Effect;
-    delete UI;
+    if (UI) {
+        delete UI;
+    }
 }
 
 void puiTest::OnGUIOpen(void *ptr) {
     // Create window
     UI = new puiTestUI(ptr, GUI_WIDTH, GUI_HEIGHT, true, true);
+}
+
+void puiTest::OnGUIClose() {
+    delete UI;
+    UI = NULL;
 }
 
 void puiTest::Reset() {

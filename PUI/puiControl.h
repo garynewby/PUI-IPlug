@@ -31,6 +31,7 @@ public:
     virtual void mouseUp(double x, double y) = 0;
     virtual void mouseDown(double x, double y) = 0;
     virtual void mouseMove(double x, double y) = 0;
+    virtual void scroll(int x, int y, float dx, float dy)  = 0;
     
     void setDirty(bool value) {
         dirty = value;

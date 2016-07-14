@@ -6,5 +6,3 @@
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
 #endif
-
-#define USE_CAIRO 1

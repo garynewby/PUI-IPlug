@@ -26,7 +26,7 @@ public:
   void OnParamChange(int paramIdx);
   void Reset();
   void OnGUIOpen(void *ptr);
-  
+  void OnGUIClose();
   
 private:
   

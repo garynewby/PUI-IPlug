@@ -21,11 +21,12 @@ public:
         
         width = cairo_image_surface_get_width(imageSurface);
         imageHeight = cairo_image_surface_get_height(imageSurface);
-        height = width;
+        
         value = 0.0;
         numberOfFrames = frameCount;
-        increment = 1.0 / numberOfFrames;
+        increment = (1.0 / numberOfFrames) * 2.0;
         frameHeight = (imageHeight / numberOfFrames);
+        height = frameHeight;
     }
     
     ~PuiKnobMultiControl() {
@@ -43,8 +44,9 @@ public:
             cairo_rectangle (cr, x, y, width, height);
             cairo_clip (cr);
             
-            int yOffset = ((numberOfFrames * value) * frameHeight);
-            cairo_surface_set_device_offset (imageSurface, 0, + yOffset);
+            double yOffset = (numberOfFrames * value * frameHeight);
+            yOffset = BOUNDED(yOffset, 0, (imageHeight - frameHeight));
+            cairo_surface_set_device_offset(imageSurface, 0, yOffset);
             
             // Draw image
             cairo_set_source_surface(cr, imageSurface, x, y);
@@ -73,16 +75,20 @@ public:
     
     void mouseMove(double px, double py) {
         if (mouseIsDown) {
-            
             direction = (lastY - py) > 0;
             value += (direction ? increment : -increment);
-            
-            if (value > 1) value = 1;
-            if (value < 0) value = 0;
-            
+            value = BOUNDED(value, 0.0, 1.0);
             std::cout << "value:" << value << "\n";
             lastY = py;
-            
+            setDirty(true);
+        }
+    }
+    
+    void scroll(int x, int y, float dx, float dy) {
+        if (inside(x, y)) {
+            direction = dy > 0;
+            value += (direction ? increment : -increment);
+            value = BOUNDED(value, 0.0, 1.0);
             setDirty(true);
         }
     }

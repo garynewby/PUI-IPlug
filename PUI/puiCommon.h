@@ -17,11 +17,6 @@ typedef enum {
 } PuiStatus;
 
 typedef enum {
-    PUI_GL,
-    PUI_CAIRO
-} PuiContextType;
-
-typedef enum {
     PUI_CHAR_BACKSPACE = 0x08,
     PUI_CHAR_ESCAPE    = 0x1B,
     PUI_CHAR_DELETE    = 0x7F

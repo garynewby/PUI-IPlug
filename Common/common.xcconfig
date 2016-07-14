@@ -1,0 +1,51 @@
+
+//// common.xcconfig ////
+
+CLANG_CXX_LANGUAGE_STANDARD = c++0x
+CLANG_CXX_LIBRARY           = libc++
+CLANG_LINK_OBJC_RUNTIME     = NO
+
+RELEASE_OPTIMIZE  = 3
+DEBUG_OPTIMIZE    = 0
+
+PRODUCT_NAME      = $(BINARY_NAME)
+CERTIFICATE_ID    = PUI
+COMPILER          = com.apple.compilers.llvm.clang.1_0
+
+GCC_PREFIX_HEADER = $IPLUG_PATH/IPlug_Prefix.pch
+LD_MAP_FILE_PATH = $(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt
+INFOPLIST_EXPAND_BUILD_SETTINGS = YES
+GENERATE_PKGINFO_FILE = YES
+
+//SDKROOT                  = macosx10.9 // Use latest and greatest
+MACOSX_DEPLOYMENT_TARGET = 10.8
+
+USER_HEADER_SEARCH_PATHS         = $(SRCROOT)/../../VST3_SDK $(SRCROOT)/../../Libs/cairo/include
+LIBRARY_SEARCH_PATHS             =
+ADDITIONAL_LIBRARY_SEARCH_PATHS  =
+FRAMEWORK_SEARCH_PATHS           = $(SRCROOT)/../../Libs/cairo/include
+ADDITIONAL_INCLUDES              = $(SRCROOT)/
+
+WDL_PATH   = $(SRCROOT)/../../WDL
+IPLUG_PATH = $(WDL_PATH)/IPlug
+VST3_SDK   = $(SRCROOT)/../../VST3_SDK
+AAX_SDK    = $(SRCROOT)/../../AAX_SDK
+CA_SDK     = $DEVELOPER_DIR/Extras/CoreAudio
+
+// Binary folder
+VST_FOLDER  = $(SRCROOT)/../../../../Release
+VST3_FOLDER = $(SRCROOT)/../../../../Release
+AU_FOLDER   = $(SRCROOT)/../../../../Release
+AAX_FOLDER  = $(SRCROOT)/../../../../Release
+APP_FOLDER  = $(SRCROOT)/../../../../Release
+
+// Pre-Processor
+AU_DEFS   = AU_API
+AAX_DEFS  = AAX_API
+APP_DEFS  = SA_API __MACOSX_CORE__
+IOS_DEFS  = SA_API
+VST_DEFS  = VST_API VST_FORCE_DEPRECATED
+VST3_DEFS = VST3_API
+COMMON_DEFS = MACX
+
+CONFIGURATION_BUILD_DIR = $(SRCROOT)/../../../../Release

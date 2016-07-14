@@ -88,6 +88,9 @@ public:
         }
     }
     
+    void scroll(int x, int y, float dx, float dy) {
+    }
+    
 private:
     
     std::string label;

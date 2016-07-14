@@ -65,10 +65,6 @@ public:
         transient_parent = parent;
     }
     
-    void setContextType(PuiContextType ptype) {
-        ctx_type = ptype;
-    }
-    
     void setIgnoreKeyRepeat(bool ignore) {
         ignoreKeyRepeat = ignore;
     }
@@ -189,10 +185,10 @@ public:
     }
     
     void scroll(int x, int y, float dx, float dy) {
-        std::cout <<  x << "\n";
-        std::cout <<  y << "\n";
-        std::cout <<  dx << "\n";
-        std::cout <<  dy << "\n";
+        for_each(controls.begin(), controls.end(), [=](PuiControl *control) {
+            control->scroll(x, y, dx, dy);
+        });
+        display();
     }
     
     void special(bool press, PuiKey key) {}
@@ -295,9 +291,7 @@ public:
     
     
 protected:
-    
-    PuiContextType ctx_type;
-    
+        
     cairo_t *context;
     cairo_surface_t *surface;
     

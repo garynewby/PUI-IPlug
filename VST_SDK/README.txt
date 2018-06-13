@@ -1,0 +1,1 @@
+Put aeffect.h and aeffectx.h from the VST2 SDK in this folder.
